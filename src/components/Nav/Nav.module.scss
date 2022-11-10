@@ -29,43 +29,45 @@
 .MenuHome {
     display: flex;
     margin-left: 10em;
+    @media only screen and (min-width: 0px) and (max-width: 650px) {
+        margin-left: 2%;
+    }
+    @media only screen and (min-width: 651px) and (max-width: 900px) {
+        margin-left: 10%;
+    }
+    @media only screen and (min-width: 901px) and (max-width: 1200px) {
+        margin-left: 20%;
+    }
     &__li {
         margin: 0px 20px;
-        &__menu {
-            display: none;
+        @media only screen and (max-width: 900px) {
+            font-size: 14px;
+            margin: 0px 10px;
+        }
+        @media only screen and (min-width: 901px) and (max-width: 1200px) {
+            font-size: 16px;
+            margin: 0px 10px;
         }
     }
-    // TODO: make responsive
-    // @media only screen and (min-width: 0px) and (max-width: 1430px) {
-    //     margin-left: 0px;
-    //     &__li {
-    //         &__menu {
-    //             display: block;
-    //         }
-    //     }
-    // }
 }
 
 .MenuOther {
     display: flex;
     justify-content: right;
     margin-right: 10em;
+    @media only screen and (min-width: 0px) and (max-width: 650px) {
+        margin-right: 2%;
+    }
+    @media only screen and (min-width: 651px) and (max-width: 900px) {
+        margin-right: 10%;
+    }
     &__li {
         margin: 0px 20px;
-        &__extra {
-            margin: 0px 20px;
-            display: block;
+        @media only screen and (max-width: 900px) {
+            font-size: 14px;
+            margin: 0px 10px;
         }
     }
-    // TODO: make responsive
-    // @media only screen and (min-width: 0px) and (max-width: 1430px) {
-    //     margin-right: 0px;
-    //     &__li {
-    //         &__extra {
-    //             display: none;
-    //         }
-    //     }
-    // }
 }
 
 .Link {

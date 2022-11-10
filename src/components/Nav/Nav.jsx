@@ -19,9 +19,6 @@ const Nav = () => {
             <div className={style.Header}>
                 <ul className={style.Nav}>
                     <div className={style.MenuHome}>
-                        <li className={style.MenuHome__li__menu}>
-                            <i className='fa-solid fa-bars'></i>
-                        </li>
                         <NavLink to='/' className={style.Link}>
                             <li
                                 className={style.MenuHome__li}
@@ -34,7 +31,7 @@ const Nav = () => {
                     <div className={style.MenuOther}>
                         <NavLink to='/products' className={style.Link}>
                             <li
-                                className={style.MenuOther__li__extra}
+                                className={style.MenuOther__li}
                                 onClick={categoryHandler}
                             >
                                 ALL
@@ -42,7 +39,7 @@ const Nav = () => {
                         </NavLink>
                         <NavLink to='/products/cats' className={style.Link}>
                             <li
-                                className={style.MenuOther__li__extra}
+                                className={style.MenuOther__li}
                                 onClick={categoryHandler}
                             >
                                 CATS
@@ -50,7 +47,7 @@ const Nav = () => {
                         </NavLink>
                         <NavLink to='/products/dogs' className={style.Link}>
                             <li
-                                className={style.MenuOther__li__extra}
+                                className={style.MenuOther__li}
                                 onClick={categoryHandler}
                             >
                                 DOGS
