@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { getProductsCategoryTrue } from '../../services/products.js';
 import { Carousel } from 'react-bootstrap/';
 import style from './CarouselList.module.scss';
+import { NavLink } from 'react-router-dom';
 
 const CarouselList = () => {
     const [products, setProducts] = useState([]);
@@ -28,7 +29,9 @@ const CarouselList = () => {
                                 {productData.Name}
                             </span>
                         </h3>
-                        <button>Shop now!</button>
+                        <NavLink to={`/products/${productData.id}`}>
+                            <button>Shop now!</button>
+                        </NavLink>
                     </Carousel.Caption>
                 </Carousel.Item>
             ))}
