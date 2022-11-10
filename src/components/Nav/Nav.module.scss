@@ -1,0 +1,78 @@
+.Sale {
+    padding: 2px;
+    background-color: #e4e2e2;
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.Header {
+    background-color: #030303;
+    color: white;
+    position: fixed;
+    top: 25px;
+    width: 100vw;
+    font-size: 20px;
+    padding-top: 15px;
+    z-index: 3;
+}
+
+.Nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.MenuHome {
+    display: flex;
+    margin-left: 10em;
+    &__li {
+        margin: 0px 20px;
+        &__menu {
+            display: none;
+        }
+    }
+    // TODO: make responsive
+    // @media only screen and (min-width: 0px) and (max-width: 1430px) {
+    //     margin-left: 0px;
+    //     &__li {
+    //         &__menu {
+    //             display: block;
+    //         }
+    //     }
+    // }
+}
+
+.MenuOther {
+    display: flex;
+    justify-content: right;
+    margin-right: 10em;
+    &__li {
+        margin: 0px 20px;
+        &__extra {
+            margin: 0px 20px;
+            display: block;
+        }
+    }
+    // TODO: make responsive
+    // @media only screen and (min-width: 0px) and (max-width: 1430px) {
+    //     margin-right: 0px;
+    //     &__li {
+    //         &__extra {
+    //             display: none;
+    //         }
+    //     }
+    // }
+}
+
+.Link {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: #6cbcd3;
+    }
+}

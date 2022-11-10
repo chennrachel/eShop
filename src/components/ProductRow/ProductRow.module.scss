@@ -1,0 +1,78 @@
+.Row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15%;
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;
+        margin: 0px 5%;
+    }
+}
+.Txt {
+    width: 40vw;
+    height: 35vh;
+    @media only screen and (max-width: 900px) {
+        width: 60vw;
+        height: 50vh;
+        padding-bottom: 20px;
+    }
+}
+.Img {
+    max-width: 30%;
+    max-height: 35vh;
+    padding: 0px 25px 10px 25px;
+    @media only screen and (max-width: 900px) {
+        max-width: 60vw;
+        max-height: 35vh;
+        padding-bottom: 20px;
+    }
+}
+
+.Amount {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+    width: 100px;
+    margin: 10px 0px;
+    margin-left: 10px;
+    background-color: white;
+    overflow-y: hidden;
+    border: 1px solid black;
+    &__Txt {
+        margin-top: 15px;
+    }
+    &__Btn {
+        position: relative;
+        border: none;
+        &:hover {
+            background-color: #6cbcd3;
+        }
+    }
+}
+
+.HeartContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Heart {
+    width: 110px;
+    padding: 10px;
+}
+
+.Options {
+    display: flex;
+    &__Size {
+        padding-left: 15px;
+    }
+}
+
+.QuantityBag {
+    display: flex;
+}

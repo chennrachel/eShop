@@ -1,0 +1,43 @@
+.CardBlock {
+    height: 410px;
+    width: 250px;
+    padding: 15px 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px grey;
+    background-color: white;
+    border-radius: 5%;
+    overflow-y: hidden;
+}
+
+.Card {
+    cursor: pointer;
+    text-decoration: none;
+    color: #434343;
+    &__Top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 220px;
+        &__Img {
+            max-height: 200px;
+            max-width: 200px;
+            align-self: center;
+        }
+        &__Heart {
+            color: blue;
+        }
+    }
+    &__Text {
+        height: 160px;
+        &__More {
+            font-size: 12px;
+        }
+    }
+    &:hover {
+        color: black;
+        & p,
+        h3 {
+            text-decoration: underline;
+        }
+    }
+}
