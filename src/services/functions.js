@@ -40,8 +40,8 @@ export const changeAmountInCart = (
             );
             // if quantity in cart = 1, you can only increase
         } else if (
-            productData.quantityInCart == 1 &&
-            plusOrMinus == 1 &&
+            productData.quantityInCart === 1 &&
+            plusOrMinus === 1 &&
             productData.quantityInCart <= productData.Quantity
         ) {
             changeCartQuantity(productData.id, plusOrMinus).then(() =>
@@ -52,9 +52,9 @@ export const changeAmountInCart = (
                 'Quantity cannot be less than 1. If you are trying to remove from cart, press remove instead'
             );
         // if quantity = 0, you can only decrease
-    } else if (productData.Quantity == 0) {
+    } else if (productData.Quantity === 0) {
         console.log('working');
-        if (productData.quantityInCart > 1 && plusOrMinus == -1) {
+        if (productData.quantityInCart > 1 && plusOrMinus === -1) {
             changeCartQuantity(productData.id, plusOrMinus).then(() =>
                 setRequest(request + 1)
             );

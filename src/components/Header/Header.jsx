@@ -6,7 +6,7 @@ const Heading = ({ title, bannerImage, description }) => {
             <img
                 src={bannerImage}
                 className={style.bannerImage}
-                alt='cute cat or dog image'
+                alt='cute cat or dog'
             ></img>
             <p className={style.Title}>{title}</p>
             <p className={style.Description}>{description}</p>

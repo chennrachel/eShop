@@ -9,7 +9,6 @@ const ProductPage = () => {
     const { id } = useParams();
     const [request, setRequest] = useContext(RequestContext);
     const [indProduct, setIndProduct] = useState([]);
-    const [stockInfo, setStockInfo] = useState([]);
     const [amount, setAmount] = useState(0);
     const [colour, setColour] = useState('');
     const [size, setSize] = useState('');
@@ -30,8 +29,7 @@ const ProductPage = () => {
 
     // functions: update amount with limitations of (0 - max stock)
     const incrementAmount = () => {
-        if (amount < indProduct.Quantity || amount < stockInfo[size])
-            setAmount(amount + 1);
+        if (amount < indProduct.Quantity) setAmount(amount + 1);
         else throw new Error('Out of stock!');
     };
     const decrementAmount = () => {

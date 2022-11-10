@@ -59,7 +59,7 @@ export const toggleFavourites = async (id) => {
         id: querySnapshot.id,
         ...querySnapshot.data(),
     };
-    if (returnData.inFavourites == true) {
+    if (returnData.inFavourites === true) {
         await updateDoc(docRef, { inFavourites: false });
     } else {
         await updateDoc(docRef, { inFavourites: true });

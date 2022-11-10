@@ -20,7 +20,7 @@ const CarouselList = () => {
                     <img
                         className='d-block w-100'
                         src={productData.bannerImage}
-                        alt={`${productData.Name} Image`}
+                        alt={`${productData.Name}`}
                         style={{ height: 400, objectFit: 'cover' }}
                     />
                     <Carousel.Caption>

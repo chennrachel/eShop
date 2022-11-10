@@ -9,7 +9,11 @@ const ProductRow = ({ productData }) => {
 
     return (
         <div className={style.Row}>
-            <img className={style.Img} src={productData.imageURL}></img>
+            <img
+                className={style.Img}
+                src={productData.imageURL}
+                alt={productData.Name}
+            ></img>
             <div className={style.Txt}>
                 <h3>{productData.Name}</h3>
                 <p>{productData.Brand}</p>

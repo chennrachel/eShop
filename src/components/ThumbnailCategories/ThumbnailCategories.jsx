@@ -16,6 +16,7 @@ const ThumbnailCategories = ({ name, img }) => {
                     src={img}
                     className={style.Img}
                     onClick={categoryHandler}
+                    alt={name}
                 />
             </NavLink>
             <span className={style.Txt}>Shop {name}</span>

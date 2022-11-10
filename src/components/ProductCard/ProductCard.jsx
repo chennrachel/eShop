@@ -9,7 +9,7 @@ const ProductCard = ({ productData }) => {
 
     return (
         <div className={style.CardBlock}>
-            {productData.inFavourites == true ? (
+            {productData.inFavourites === true ? (
                 <i
                     onClick={() =>
                         heartClickHandler(productData, request, setRequest)
@@ -32,6 +32,7 @@ const ProductCard = ({ productData }) => {
                     <img
                         className={style.Card__Top__Img}
                         src={productData.imageURL}
+                        alt={productData.Name}
                     ></img>
                 </div>
                 <div className={style.Card__Text}>

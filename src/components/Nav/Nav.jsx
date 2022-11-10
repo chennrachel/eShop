@@ -7,8 +7,8 @@ const Nav = () => {
     const [category, setCategory] = useContext(CategoryContext);
     const categoryHandler = (event) => {
         if (
-            event.target.textContent == 'ROYAL PETS' ||
-            event.target.textContent == 'ALL'
+            event.target.textContent === 'ROYAL PETS' ||
+            event.target.textContent === 'ALL'
         )
             setCategory('all');
         else setCategory(event.target.textContent.toLowerCase());
