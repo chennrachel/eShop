@@ -1,0 +1,16 @@
+.ThumbnailContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 10%;
+    @media only screen and (max-width: 1012px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Title {
+    color: #434343;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 30px;
+}
