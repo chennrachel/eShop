@@ -1,5 +1,5 @@
 import style from './App.module.scss';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Nav from './components/Nav/Nav';
 import HomePage from './containers/HomePage/HomePage';
@@ -18,7 +18,7 @@ function App() {
 
     return (
         <div className={style.App}>
-            <BrowserRouter>
+            <HashRouter>
                 <ScrollToTop />
                 <CategoryContext.Provider value={[category, setCategory]}>
                     <Nav />
@@ -94,7 +94,7 @@ function App() {
                         </RequestContext.Provider>
                     </ProductContext.Provider>
                 </CategoryContext.Provider>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
